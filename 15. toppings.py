@@ -58,11 +58,9 @@ new_users = ['Bokluk','Noble dib','Noble dib 2','Extra_noble_dib','dancho']
 new_users_case = [new_users.lower() for new_users in new_users]
 for new_users_case in new_users_case:
 	if new_users_case in current_users_case:
-		print(f'----\nSorry, username is taken')
+		print(f'----\nSorry, {new_users_case} is taken')
 	else:
-		print(f'---\nSuccessful registration')
-
-
+		print(f'---\nSuccessful registration as {new_users_case}')
 
 
 
