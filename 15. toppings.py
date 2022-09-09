@@ -47,7 +47,7 @@ for usernames in usernames:
 		print(f"Hello {usernames}, thank you for logging in")
 
 
-#Exercise 2
+#Exercise 2 - END OF CHAPTER 5 IN THE BOOK
 
 
 print('---\n\n\nPlease check username verification:')
@@ -56,11 +56,13 @@ current_users_case = [current_users.lower() for current_users in current_users]
 
 new_users = ['Bokluk','Noble dib','Noble dib 2','Extra_noble_dib','dancho']
 new_users_case = [new_users.lower() for new_users in new_users]
-for new_users_case in new_users_case:
-	if new_users_case in current_users_case:
-		print(f'----\nSorry, {new_users_case} is taken')
+for case in new_users_case:
+	if case in current_users_case or case in current_users:
+		print(f'----\nSorry, {case} is taken')
 	else:
-		print(f'---\nSuccessful registration as {new_users_case}')
+		print(f'---\nSuccessful registration as {case}')
+
+
 
 
 
